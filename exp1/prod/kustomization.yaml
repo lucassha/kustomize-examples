@@ -1,0 +1,16 @@
+namePrefix: production-
+
+commonLabels:
+  env: production
+  org: newrelic
+
+commonAnnotations:
+  env: production
+
+configMapGenerator:
+  - name: env-config
+    files:
+      - ./prod.env
+
+bases:
+  - ../base

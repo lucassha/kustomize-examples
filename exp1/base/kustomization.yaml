@@ -1,0 +1,7 @@
+commonLabels:
+  app: slucas
+
+resources:
+  - deploy.yaml
+  - service.yaml
+  - cm.yaml

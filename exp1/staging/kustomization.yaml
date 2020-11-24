@@ -1,0 +1,14 @@
+namePrefix: staging-
+
+commonLabels:
+  env: staging
+  org: newrelic
+
+commonAnnotations:
+  env: staging
+
+bases:
+  - ../base
+
+patchesStrategicMerge:
+  - map.yaml
